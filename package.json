@@ -1,0 +1,56 @@
+{
+  "name": "gitquery-mcp",
+  "version": "0.1.0",
+  "description": "Ask your repo questions through an API, no clone required. Model Context Protocol (MCP) server for repository history.",
+  "type": "module",
+  "bin": {
+    "gitquery-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/[your-org]/gitquery-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/[your-org]/gitquery-mcp/issues"
+  },
+  "homepage": "https://github.com/[your-org]/gitquery-mcp#readme",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "git",
+    "github",
+    "devtools",
+    "ai"
+  ],
+  "author": "[Your Name or Organization]",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "@octokit/graphql": "^8.2.1",
+    "@octokit/rest": "^21.1.1",
+    "lru-cache": "^11.0.2",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.7"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
