@@ -187,7 +187,7 @@ To protect LLM context windows and token budgets, responses are strictly bounded
 Pull requests and issues are welcome!
 
 ```bash
-git clone https://github.com/[your-org]/gitquery-mcp.git
+git clone https://github.com/attaelahi/gitquery-mcp.git
 cd gitquery-mcp
 npm install
 npm run build
@@ -198,4 +198,4 @@ npm test
 
 ## License
 
-[MIT](LICENSE) © 2026 [Your Name or Organization]
+[MIT](LICENSE) © 2026 Atta Elahi
